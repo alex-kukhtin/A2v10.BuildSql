@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<id>A2v10.BuildSql</id>
+		<version>10.0.7671</version>
+		<title>A2v10 Build Sql Tool</title>
+		<authors>Alex Kukhtin</authors>
+		<owners>Alex Kukhtin</owners>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/alex-kukhtin/A2v10.BuildSql</projectUrl>
+		<description>Creates sql scripts for A2v10 solutions</description>
+		<releaseNotes>Last NUGET release.</releaseNotes>
+		<copyright>Copyright © 2020 Alex Kukhtin</copyright>
+		<tags>A2v10 Tools</tags>
+	</metadata>
+	<files>
+		<file src="bin/Release/A2v10.BuildSql.dll" target="build"/>
+		<file src="bin/Release/Newtonsoft.Json.dll" target="build"/>
+		<file src="A2v10.BuildSql.targets" target="build/A2v10.BuildSql.targets" />
+	</files>
+</package>

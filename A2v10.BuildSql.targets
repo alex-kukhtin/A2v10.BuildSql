@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+	<UsingTask TaskName="A2v10.BuildSql.Build" AssemblyFile="A2v10.BuildSql.dll" />
+	<Target Name="AfterBuild">
+		<A2v10.BuildSql.Build ProjectDir="$(MSBuildProjectDirectory)" />
+	</Target>
+</Project>
