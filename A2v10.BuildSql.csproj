@@ -90,11 +90,14 @@
     <Compile Include="SqlFileBuilder.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="A2v10.BuildSql.nuspec" />
+    <None Include="A2v10.BuildSql.targets" />
     <None Include="app.config" />
     <None Include="packages.config" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="readme.txt" />
+    <Content Include="todo.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

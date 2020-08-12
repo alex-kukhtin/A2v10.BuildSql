@@ -4,4 +4,10 @@
 	<Target Name="AfterBuild">
 		<A2v10.BuildSql.Build ProjectDir="$(MSBuildProjectDirectory)" />
 	</Target>
+	<ItemGroup>
+		<Page Remove="App_application\**\*.xaml"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="App_application\**\*.xaml"/>
+	</ItemGroup>
 </Project>

@@ -1,0 +1,6 @@
+﻿
+-- start
+nuget pack A2v10.BuildSql.nuspec  -OutputDirectory d:\NuGet.Local -Prop Configuration=Release
+
+-- links
+https://docs.microsoft.com/en-us/visualstudio/msbuild/how-to-extend-the-visual-studio-build-process?view=vs-2019
