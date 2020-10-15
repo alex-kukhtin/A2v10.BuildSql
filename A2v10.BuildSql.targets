@@ -8,6 +8,12 @@
 		<Page Remove="App_application\**\*.xaml"/>
 	</ItemGroup>
 	<ItemGroup>
+		<TypeScriptCompile Remove="App_application\**\*.d.ts" />
+	</ItemGroup>
+	<ItemGroup>
 		<Content Include="App_application\**\*.xaml"/>
+	</ItemGroup>
+	<ItemGroup>
+		<Content Include="App_application\**\*.d.ts"/>
 	</ItemGroup>
 </Project>
