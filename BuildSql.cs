@@ -23,7 +23,7 @@ namespace A2v10.BuildSql
 			Log.LogMessage(MessageImportance.Normal, $"Project dir: {ProjectDir}");
 			var appPath = Path.GetFullPath(Path.Combine(ProjectDir, "App_application"));
 			if (!Directory.Exists(appPath))
-				return false;
+				return true; // success
 
 			var sb = new SqlFileBuilder(appPath, Log);
 			sb.Process();
