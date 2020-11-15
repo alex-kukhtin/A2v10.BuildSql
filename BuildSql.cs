@@ -1,10 +1,8 @@
-﻿
+﻿// Copyright © 2020 Alex Kukhtin. All rights reserved.
+
 using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
@@ -17,13 +15,15 @@ namespace A2v10.BuildSql
 		public override Boolean Execute()
 		{
 			var ver = Assembly.GetExecutingAssembly().GetName().Version;
-			Log.LogMessage(MessageImportance.High, $"A2v10.BuildSql version:{ver}");
+			Log.LogMessage(MessageImportance.Normal, $"A2v10.BuildSql version:{ver}");
 
 			if (ProjectDir == null)
 				return false;
 
-			Log.LogMessage(MessageImportance.High, $"Project dir: {ProjectDir}");
+			Log.LogMessage(MessageImportance.Normal, $"Project dir: {ProjectDir}");
 			var appPath = Path.GetFullPath(Path.Combine(ProjectDir, "App_application"));
+			if (!Directory.Exists(appPath))
+				return false;
 
 			var sb = new SqlFileBuilder(appPath, Log);
 			sb.Process();
