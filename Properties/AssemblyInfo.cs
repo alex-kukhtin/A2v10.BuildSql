@@ -8,9 +8,9 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyTitle("A2v10.BuildSql")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Alex Kukhtin")]
+[assembly: AssemblyCompany("Oleksandr Kukhtin")]
 [assembly: AssemblyProduct("A2v10 Platform")]
-[assembly: AssemblyCopyright("Copyright © 2020 Alex Kukhtin")]
+[assembly: AssemblyCopyright("Copyright © 2020-2022 Oleksandr Kukhtin")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
@@ -32,5 +32,5 @@ using System.Runtime.InteropServices;
 // You can specify all the values or you can default the Build and Revision Numbers
 // by using the '*' as shown below:
 // [assembly: AssemblyVersion("1.0.*")]
-[assembly: AssemblyVersion("10.0.7674.0")]
-[assembly: AssemblyFileVersion("10.0.7674.0")]
+[assembly: AssemblyVersion("10.0.7675.0")]
+[assembly: AssemblyFileVersion("10.0.7675.0")]
